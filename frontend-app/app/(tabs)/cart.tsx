@@ -10,10 +10,12 @@ import {
 } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { useCart } from "@/context/CartContext";
+import { useRouter } from "expo-router";
 
 const CartScreen = () => {
   const { items, increaseQuantity, decreaseQuantity } = useCart();
   const [selectedItems, setSelectedItems] = useState<string[]>([]);
+  const router = useRouter();
 
   const handleSelectItem = (id: string) => {
     setSelectedItems((prev) =>
@@ -36,6 +38,10 @@ const CartScreen = () => {
       .filter((item) => selectedItems.includes(item.id))
       .reduce((sum, item) => sum + item.price * item.quantity, 0);
   }, [items, selectedItems]);
+
+  const handleBuy = () => {
+    router.push('/(tabs)/payment');
+  };
 
 
   const renderItem = ({ item }) => {
@@ -85,7 +91,7 @@ const CartScreen = () => {
                     {isAllSelected && <Ionicons name="checkmark" size={18} color="white" />}
                 </TouchableOpacity>
                 <Text style={styles.selectAllText}>Chọn tất cả</Text>
-                <TouchableOpacity style={styles.buyButton}>
+                <TouchableOpacity style={styles.buyButton} onPress={handleBuy}>
                     <Text style={styles.buyButtonText}>
                         {totalPrice > 0 ? `Mua (${(totalPrice).toLocaleString('en-US')}đ)` : 'Mua'}
                     </Text>

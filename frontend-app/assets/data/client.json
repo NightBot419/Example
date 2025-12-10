@@ -4,6 +4,7 @@
     "name": "Nguyen Van A",
     "totalPurchases": 30000000,
     "email": "nguyenvana@example.com",
+    "address": "Số 1, ngõ 1, quận 1, TP. HCM",
     "account": {
       "username": "nguyenvana@example.com",
       "password": "123"
@@ -14,6 +15,7 @@
     "name": "Tran Thi B",
     "totalPurchases": 23750000,
     "email": "tranthib@example.com",
+    "address": "Số 2, ngõ 2, quận 2, TP. HCM",
     "account": {
       "username": "tranthib@example.com",
       "password": "123"
@@ -24,6 +26,7 @@
     "name": "Le Van C",
     "totalPurchases": 37500000,
     "email": "levanc@example.com",
+    "address": "Số 3, ngõ 3, quận 3, TP. HCM",
     "account": {
       "username": "levanc@example.com",
       "password": "123"
@@ -34,6 +37,7 @@
     "name": "Pham Thi D",
     "totalPurchases": 20000000,
     "email": "phamthid@example.com",
+    "address": "Số 4, ngõ 4, quận 4, TP. HCM",
     "account": {
       "username": "phamthid@example.com",
       "password": "123"
@@ -44,6 +48,7 @@
     "name": "Hoang Van E",
     "totalPurchases": 27500000,
     "email": "hoangvane@example.com",
+    "address": "Số 5, ngõ 5, quận 5, TP. HCM",
     "account": {
       "username": "hoangvane@example.com",
       "password": "123"
@@ -54,6 +59,7 @@
     "name": "Dang Thi F",
     "totalPurchases": 17500000,
     "email": "dangthif@example.com",
+    "address": "Số 6, ngõ 6, quận 6, TP. HCM",
     "account": {
       "username": "dangthif@example.com",
       "password": "123"
@@ -64,6 +70,7 @@
     "name": "Bui Van G",
     "totalPurchases": 32500000,
     "email": "buivang@example.com",
+    "address": "Số 7, ngõ 7, quận 7, TP. HCM",
     "account": {
       "username": "buivang@example.com",
       "password": "123"
@@ -74,6 +81,7 @@
     "name": "Do Thi H",
     "totalPurchases": 22500000,
     "email": "dothih@example.com",
+    "address": "Số 8, ngõ 8, quận 8, TP. HCM",
     "account": {
       "username": "dothih@example.com",
       "password": "123"
@@ -84,6 +92,7 @@
     "name": "Vo Van I",
     "totalPurchases": 26250000,
     "email": "vovani@example.com",
+    "address": "Số 9, ngõ 9, quận 9, TP. HCM",
     "account": {
       "username": "vovani@example.com",
       "password": "123"
@@ -94,6 +103,7 @@
     "name": "Truong Thi K",
     "totalPurchases": 16250000,
     "email": "truongthik@example.com",
+    "address": "Số 10, ngõ 10, quận 10, TP. HCM",
     "account": {
       "username": "truongthik@example.com",
       "password": "123"
@@ -104,6 +114,7 @@
     "name": "Ngo Van L",
     "totalPurchases": 35000000,
     "email": "ngovanl@example.com",
+    "address": "Số 11, ngõ 11, quận 11, TP. HCM",
     "account": {
       "username": "ngovanl@example.com",
       "password": "123"
@@ -114,6 +125,7 @@
     "name": "Duong Thi M",
     "totalPurchases": 18750000,
     "email": "duongthim@example.com",
+    "address": "Số 12, ngõ 12, quận 12, TP. HCM",
     "account": {
       "username": "duongthim@example.com",
       "password": "123"
@@ -124,6 +136,7 @@
     "name": "a",
     "totalPurchases": 0,
     "email": "a",
+    "address": "Số 13, ngõ 13, quận 13, TP. HCM",
     "account": {
       "username": "a",
       "password": "123"

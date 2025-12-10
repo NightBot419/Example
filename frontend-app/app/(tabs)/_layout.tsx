@@ -51,6 +51,18 @@ export default function TabsLayout() {
           ),
         }}
       />
+      <Tabs.Screen
+        name="payment"
+        options={{
+            href: null,
+        }}
+      />
+      <Tabs.Screen
+        name="payment-success"
+        options={{
+            href: null,
+        }}
+      />
     </Tabs>
   );
 }
