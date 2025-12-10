@@ -3,8 +3,11 @@ import React from "react";
 import { View, Text, StyleSheet, Image, TouchableOpacity } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { router } from "expo-router";
+import clientData from "@/assets/data/client.json";
 
 const ProfileScreen = () => {
+  const client = clientData[0]; // Using the first client for now
+
   const handleLogout = () => {
     // Navigate back to the login screen
     router.replace("/(auth)/login");
@@ -21,9 +24,8 @@ const ProfileScreen = () => {
           }}
           style={styles.avatar}
         />
-        <Text style={styles.name}>Phạm Thị Hồng</Text>
-        <Text style={styles.address}>175 Tây Sơn - Đống Đa - Hà Nội</Text>
-        <Text style={styles.phone}>458-419-7189</Text>
+        <Text style={styles.name}>{client.name}</Text>
+        <Text style={styles.address}>{client.address}</Text>
       </View>
 
       <View style={styles.formContainer}>
@@ -31,10 +33,8 @@ const ProfileScreen = () => {
         <TouchableOpacity style={styles.editIcon}>
             <Ionicons name="pencil" size={24} color="#8B4513" />
         </TouchableOpacity>
-        <Text style={styles.fieldLabel}>Email Address</Text>
-        <Text style={styles.fieldLabel}>Password</Text>
-        <Text style={styles.fieldLabel}>First Name</Text>
-        <Text style={styles.fieldLabel}>Last Name</Text>
+        <Text style={styles.fieldLabel}>Email Address: {client.email}</Text>
+        <Text style={styles.fieldLabel}>Name: {client.name}</Text>
       </View>
 
       <TouchableOpacity style={styles.logoutButton} onPress={handleLogout}>
@@ -71,10 +71,6 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
   },
   address: {
-    fontSize: 16,
-    color: "gray",
-  },
-  phone: {
     fontSize: 16,
     color: "gray",
   },
