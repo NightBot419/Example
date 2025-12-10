@@ -1,0 +1,132 @@
+[
+  {
+    "id": 1,
+    "name": "Nguyen Van A",
+    "totalPurchases": 30000000,
+    "email": "nguyenvana@example.com",
+    "account": {
+      "username": "nguyenvana@example.com",
+      "password": "123"
+    }
+  },
+  {
+    "id": 2,
+    "name": "Tran Thi B",
+    "totalPurchases": 23750000,
+    "email": "tranthib@example.com",
+    "account": {
+      "username": "tranthib@example.com",
+      "password": "123"
+    }
+  },
+  {
+    "id": 3,
+    "name": "Le Van C",
+    "totalPurchases": 37500000,
+    "email": "levanc@example.com",
+    "account": {
+      "username": "levanc@example.com",
+      "password": "123"
+    }
+  },
+  {
+    "id": 4,
+    "name": "Pham Thi D",
+    "totalPurchases": 20000000,
+    "email": "phamthid@example.com",
+    "account": {
+      "username": "phamthid@example.com",
+      "password": "123"
+    }
+  },
+  {
+    "id": 5,
+    "name": "Hoang Van E",
+    "totalPurchases": 27500000,
+    "email": "hoangvane@example.com",
+    "account": {
+      "username": "hoangvane@example.com",
+      "password": "123"
+    }
+  },
+  {
+    "id": 6,
+    "name": "Dang Thi F",
+    "totalPurchases": 17500000,
+    "email": "dangthif@example.com",
+    "account": {
+      "username": "dangthif@example.com",
+      "password": "123"
+    }
+  },
+  {
+    "id": 7,
+    "name": "Bui Van G",
+    "totalPurchases": 32500000,
+    "email": "buivang@example.com",
+    "account": {
+      "username": "buivang@example.com",
+      "password": "123"
+    }
+  },
+  {
+    "id": 8,
+    "name": "Do Thi H",
+    "totalPurchases": 22500000,
+    "email": "dothih@example.com",
+    "account": {
+      "username": "dothih@example.com",
+      "password": "123"
+    }
+  },
+  {
+    "id": 9,
+    "name": "Vo Van I",
+    "totalPurchases": 26250000,
+    "email": "vovani@example.com",
+    "account": {
+      "username": "vovani@example.com",
+      "password": "123"
+    }
+  },
+  {
+    "id": 10,
+    "name": "Truong Thi K",
+    "totalPurchases": 16250000,
+    "email": "truongthik@example.com",
+    "account": {
+      "username": "truongthik@example.com",
+      "password": "123"
+    }
+  },
+  {
+    "id": 11,
+    "name": "Ngo Van L",
+    "totalPurchases": 35000000,
+    "email": "ngovanl@example.com",
+    "account": {
+      "username": "ngovanl@example.com",
+      "password": "123"
+    }
+  },
+  {
+    "id": 12,
+    "name": "Duong Thi M",
+    "totalPurchases": 18750000,
+    "email": "duongthim@example.com",
+    "account": {
+      "username": "duongthim@example.com",
+      "password": "123"
+    }
+  },
+  {
+    "id": 13,
+    "name": "a",
+    "totalPurchases": 0,
+    "email": "a",
+    "account": {
+      "username": "a",
+      "password": "123"
+    }
+  }
+]
