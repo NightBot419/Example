@@ -14,6 +14,7 @@ import {
 import { Ionicons } from "@expo/vector-icons";
 import menuData from "@/assets/data/menu.json";
 import { useCart } from "@/context/CartContext";
+import { useRouter } from "expo-router";
 
 // --- Data Processing (Moved outside component) ---
 const allItems = menuData.flatMap((category) =>
@@ -80,31 +81,41 @@ const ListHeader = () => (
 // --- Main Component ---
 const HomeScreen = () => {
     const { addToCart } = useCart();
+    const router = useRouter();
 
     const handleAddToCart = (item) => {
         addToCart(item);
         Alert.alert("Added to cart", `${item.name} has been added to your cart.`);
     }
 
+    const handlePressItem = useCallback((item) => {
+        router.push({
+            pathname: "/(tabs)/drink-detail",
+            params: { id: item.id },
+        });
+    }, [router]);
+
     const renderItem = useCallback(({ item }) => (
-        <View style={styles.card}>
-          <Image source={{ uri: item.image }} style={styles.cardImage} />
-          <View style={styles.ratingContainer}>
-            <Ionicons name="star" size={16} color="#FFD700" />
-            <Text style={styles.ratingText}>4.8</Text>
-          </View>
-          <Text style={styles.cardTitle}>{item.name}</Text>
-          <Text style={styles.cardSubtitle}>{item.category}</Text>
-          <View style={styles.priceContainer}>
-            <Text style={styles.priceText}>
-              {(item.price / 1000).toFixed(3)}
-            </Text>
-            <TouchableOpacity style={styles.addButton} onPress={() => handleAddToCart(item)}>
-              <Ionicons name="add" size={24} color="white" />
-            </TouchableOpacity>
-          </View>
-        </View>
-      ), [addToCart]);
+        <TouchableOpacity onPress={() => handlePressItem(item)} style={styles.cardWrapper}>
+            <View style={styles.card}>
+              <Image source={{ uri: item.image }} style={styles.cardImage} />
+              <View style={styles.ratingContainer}>
+                <Ionicons name="star" size={16} color="#FFD700" />
+                <Text style={styles.ratingText}>4.8</Text>
+              </View>
+              <Text style={styles.cardTitle}>{item.name}</Text>
+              <Text style={styles.cardSubtitle}>{item.category}</Text>
+              <View style={styles.priceContainer}>
+                <Text style={styles.priceText}>
+                  {(item.price / 1000).toFixed(3)}
+                </Text>
+                <TouchableOpacity style={styles.addButton} onPress={() => handleAddToCart(item)}>
+                  <Ionicons name="add" size={24} color="white" />
+                </TouchableOpacity>
+              </View>
+            </View>
+        </TouchableOpacity>
+      ), [addToCart, handlePressItem]);
 
   return (
     <>
@@ -214,13 +225,15 @@ const styles = StyleSheet.create({
     row: {
       justifyContent: "space-between",
     },
+    cardWrapper: { // New style for TouchableOpacity
+        flex: 1,
+        margin: 10,
+        maxWidth: "45%",
+    },
     card: {
-      flex: 1,
       backgroundColor: "#333",
       borderRadius: 15,
       padding: 10,
-      margin: 10,
-      maxWidth: "45%",
     },
     cardImage: {
       width: "100%",

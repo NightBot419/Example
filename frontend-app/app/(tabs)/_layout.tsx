@@ -63,6 +63,12 @@ export default function TabsLayout() {
             href: null,
         }}
       />
+      <Tabs.Screen
+        name="drink-detail"
+        options={{
+            href: null,
+        }}
+      />
     </Tabs>
   );
 }
