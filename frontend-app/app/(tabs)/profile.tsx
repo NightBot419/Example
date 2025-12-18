@@ -2,16 +2,25 @@
 import React from "react";
 import { View, Text, StyleSheet, Image, TouchableOpacity } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
-import { router } from "expo-router";
-import clientData from "@/assets/data/client.json";
+import { useAuth } from "@/context/AuthContext"; // Import useAuth
 
 const ProfileScreen = () => {
-  const client = clientData[0]; // Using the first client for now
+  const { authState, onLogout } = useAuth();
+  const user = authState.user; // Get user from authState
 
   const handleLogout = () => {
-    // Navigate back to the login screen
-    router.replace("/(auth)/login");
+    onLogout(); // Call the logout function from AuthContext
+    // The AuthContext will handle navigation to /auth/login
   };
+
+  if (!user) {
+    // Handle case where user is not logged in, though AuthProvider should redirect
+    return (
+        <View style={styles.container}>
+            <Text style={styles.header}>Loading profile...</Text>
+        </View>
+    );
+  }
 
   return (
     <View style={styles.container}>
@@ -20,12 +29,12 @@ const ProfileScreen = () => {
       <View style={styles.profileContainer}>
         <Image
           source={{
-            uri: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80",
+            uri: user.avatar || "https://images.unsplash.com/photo-1438761681033-6461ffad8d80",
           }}
           style={styles.avatar}
         />
-        <Text style={styles.name}>{client.name}</Text>
-        <Text style={styles.address}>{client.address}</Text>
+        <Text style={styles.name}>{user.first_name} {user.last_name}</Text>
+        <Text style={styles.address}>{user.address || "Chưa có địa chỉ"}</Text>
       </View>
 
       <View style={styles.formContainer}>
@@ -33,8 +42,8 @@ const ProfileScreen = () => {
         <TouchableOpacity style={styles.editIcon}>
             <Ionicons name="pencil" size={24} color="#8B4513" />
         </TouchableOpacity>
-        <Text style={styles.fieldLabel}>Email Address: {client.email}</Text>
-        <Text style={styles.fieldLabel}>Name: {client.name}</Text>
+        <Text style={styles.fieldLabel}>Email Address: {user.email}</Text>
+        <Text style={styles.fieldLabel}>Name: {user.first_name} {user.last_name}</Text>
       </View>
 
       <TouchableOpacity style={styles.logoutButton} onPress={handleLogout}>

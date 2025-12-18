@@ -1,0 +1,26 @@
+.top-customers-container {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+  }
+  
+  .top-customers-container h3 {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  
+  .customers-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  
+  .customer-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.8rem;
+    border: 1px solid #eee;
+    border-radius: 5px;
+  }
+  

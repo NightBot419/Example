@@ -1,0 +1,14 @@
+.dashboard-home-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns */
+    gap: 2rem; /* Gap between grid items */
+  }
+  
+  /* You might need to adjust specific component widths within the grid */
+  .orders-container,
+  .revenue-container,
+  .top-selling-drinks-container,
+  .top-customers-container {
+    width: 100%; /* Ensure components fill their grid area */
+  }
+  

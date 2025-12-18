@@ -1,0 +1,41 @@
+.revenue-container {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+  }
+  
+  .revenue-container h3 {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+  }
+  
+  .chart-placeholder {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    color: #888;
+  }
+  
+  .timeframe-selector {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 1rem;
+  }
+  
+  .timeframe-selector button {
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 0.5rem;
+  }
+  
+  .timeframe-selector button.active {
+    background-color: #3d52a0;
+    color: white;
+  }
+  

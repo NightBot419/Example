@@ -1,99 +1,374 @@
 [
     {
-        "category": "Coffee",
+        "category": "Cà Phê Pha Phin",
         "items": [
             {
-                "id": "coffee-001",
-                "name": "Espresso",
-                "price": 62500,
-                "sold": 120
+                "id": "ca-phe-pha-phin-001",
+                "name": "Cà phê Đen",
+                "price": 30000,
+                "sold": 50
             },
             {
-                "id": "coffee-002",
-                "name": "Latte",
-                "price": 100000,
-                "sold": 250
+                "id": "ca-phe-pha-phin-002",
+                "name": "Cà phê Nâu",
+                "price": 35000,
+                "sold": 67
+            }
+        ]
+    },
+    {
+        "category": "Cà Phê Đá",
+        "items": [
+            {
+                "id": "ca-phe-da-003",
+                "name": "Cà phê Đen đá",
+                "price": 30000,
+                "sold": 84
             },
             {
-                "id": "coffee-003",
-                "name": "Cappuccino",
-                "price": 93750,
-                "sold": 180
+                "id": "ca-phe-da-004",
+                "name": "Cà phê Nâu đá",
+                "price": 35000,
+                "sold": 101
             },
             {
-                "id": "coffee-004",
-                "name": "Americano",
-                "price": 75000,
+                "id": "ca-phe-da-005",
+                "name": "Bạc xỉu đá",
+                "price": 40000,
+                "sold": 118
+            },
+            {
+                "id": "ca-phe-da-006",
+                "name": "Cà phê Kem cheese đá",
+                "price": 45000,
+                "sold": 135
+            },
+            {
+                "id": "ca-phe-da-007",
+                "name": "Cà phê Cốt dừa",
+                "price": 40000,
+                "sold": 152
+            },
+            {
+                "id": "ca-phe-da-008",
+                "name": "Cà phê Muối",
+                "price": 20000,
+                "sold": 169
+            }
+        ]
+    },
+    {
+        "category": "Cà Phê Nóng",
+        "items": [
+            {
+                "id": "ca-phe-nong-009",
+                "name": "Cà phê Đen nóng",
+                "price": 30000,
+                "sold": 186
+            },
+            {
+                "id": "ca-phe-nong-010",
+                "name": "Cà phê Nâu nóng",
+                "price": 35000,
+                "sold": 203
+            },
+            {
+                "id": "ca-phe-nong-011",
+                "name": "Bạc xỉu nóng",
+                "price": 40000,
+                "sold": 220
+            },
+            {
+                "id": "ca-phe-nong-012",
+                "name": "Cà phê Kem cheese nóng",
+                "price": 45000,
+                "sold": 237
+            }
+        ]
+    },
+    {
+        "category": "Kakao",
+        "items": [
+            {
+                "id": "kakao-013",
+                "name": "Kakao Cốt dừa",
+                "price": 40000,
+                "sold": 254
+            },
+            {
+                "id": "kakao-014",
+                "name": "Kakao đá",
+                "price": 30000,
+                "sold": 271
+            },
+            {
+                "id": "kakao-015",
+                "name": "Kakao nóng",
+                "price": 30000,
+                "sold": 288
+            },
+            {
+                "id": "kakao-016",
+                "name": "Kakao Quế đá",
+                "price": 25000,
+                "sold": 5
+            },
+            {
+                "id": "kakao-017",
+                "name": "Kakao Quế nóng",
+                "price": 25000,
+                "sold": 22
+            }
+        ]
+    },
+    {
+        "category": "Trà Sữa Trân Châu",
+        "items": [
+            {
+                "id": "tra-sua-tran-chau-018",
+                "name": "Sữa tươi Trân châu đường đen (M)",
+                "price": 36000,
+                "sold": 39
+            },
+            {
+                "id": "tra-sua-tran-chau-019",
+                "name": "Sữa tươi Trân châu đường đen (L)",
+                "price": 45000,
+                "sold": 56
+            },
+            {
+                "id": "tra-sua-tran-chau-020",
+                "name": "Sữa tươi Trân châu trắng 3Q",
+                "price": 45000,
+                "sold": 73
+            },
+            {
+                "id": "tra-sua-tran-chau-021",
+                "name": "Trà sữa Trân châu đường đen",
+                "price": 27000,
                 "sold": 90
+            },
+            {
+                "id": "tra-sua-tran-chau-022",
+                "name": "Matcha sữa Trân châu đường đen",
+                "price": 29000,
+                "sold": 107
+            },
+            {
+                "id": "tra-sua-tran-chau-023",
+                "name": "Trà sữa Đào Trân châu đường đen",
+                "price": 23000,
+                "sold": 124
+            },
+            {
+                "id": "tra-sua-tran-chau-024",
+                "name": "Trà sữa Bacon Trân châu đường đen",
+                "price": 23000,
+                "sold": 141
             }
         ]
     },
     {
-        "category": "Tea",
+        "category": "Nước Ép Hoa Quả",
         "items": [
             {
-                "id": "tea-001",
-                "name": "Green Tea",
-                "price": 50000,
-                "sold": 80
+                "id": "nuoc-ep-hoa-qua-025",
+                "name": "Nước ép Dứa",
+                "price": 25000,
+                "sold": 158
             },
             {
-                "id": "tea-002",
-                "name": "Black Tea",
-                "price": 50000,
-                "sold": 60
+                "id": "nuoc-ep-hoa-qua-026",
+                "name": "Nước ép Ổi",
+                "price": 25000,
+                "sold": 175
             },
             {
-                "id": "tea-003",
-                "name": "Chai Latte",
-                "price": 106250,
-                "sold": 150
+                "id": "nuoc-ep-hoa-qua-027",
+                "name": "Nước ép Dưa hấu",
+                "price": 25000,
+                "sold": 192
+            },
+            {
+                "id": "nuoc-ep-hoa-qua-028",
+                "name": "Nước ép Táo",
+                "price": 30000,
+                "sold": 209
+            },
+            {
+                "id": "nuoc-ep-hoa-qua-029",
+                "name": "Nước ép Lê",
+                "price": 20000,
+                "sold": 226
+            },
+            {
+                "id": "nuoc-ep-hoa-qua-030",
+                "name": "Nước Cam tươi",
+                "price": 45000,
+                "sold": 243
             }
         ]
     },
     {
-        "category": "Juice",
+        "category": "Sinh Tố",
         "items": [
             {
-                "id": "juice-001",
-                "name": "Orange Juice",
-                "price": 87500,
-                "sold": 110
+                "id": "sinh-to-031",
+                "name": "Sinh tố Bơ",
+                "price": 45000,
+                "sold": 260
             },
             {
-                "id": "juice-002",
-                "name": "Apple Juice",
-                "price": 81250,
-                "sold": 70
+                "id": "sinh-to-032",
+                "name": "Sinh tố Bơ Mãng cầu",
+                "price": 45000,
+                "sold": 277
             },
             {
-                "id": "juice-003",
-                "name": "Mango Smoothie",
-                "price": 125000,
-                "sold": 200
+                "id": "sinh-to-033",
+                "name": "Sinh tố Mãng cầu",
+                "price": 45000,
+                "sold": 294
             }
         ]
     },
     {
-        "category": "Soda",
+        "category": "Trà Hoa Quả",
         "items": [
             {
-                "id": "soda-001",
-                "name": "Coca-Cola",
-                "price": 50000,
-                "sold": 300
+                "id": "tra-hoa-qua-034",
+                "name": "Trà Đào Cam sả",
+                "price": 30000,
+                "sold": 11
             },
             {
-                "id": "soda-002",
-                "name": "Pepsi",
-                "price": 50000,
-                "sold": 280
+                "id": "tra-hoa-qua-035",
+                "name": "Trà Ổi hồng TEAPOTT",
+                "price": 30000,
+                "sold": 28
             },
             {
-                "id": "soda-003",
-                "name": "Sprite",
-                "price": 50000,
-                "sold": 190
+                "id": "tra-hoa-qua-036",
+                "name": "Trà Ổi hồng TEAPOTT Kam cheese",
+                "price": 45000,
+                "sold": 45
+            },
+            {
+                "id": "tra-hoa-qua-037",
+                "name": "Trà Chanh Đào hạt lựu",
+                "price": 30000,
+                "sold": 62
+            },
+            {
+                "id": "tra-hoa-qua-038",
+                "name": "Trà Chanh Xoài",
+                "price": 20000,
+                "sold": 79
+            },
+            {
+                "id": "tra-hoa-qua-039",
+                "name": "Trà Chanh truyền thống",
+                "price": 20000,
+                "sold": 96
+            },
+            {
+                "id": "tra-hoa-qua-040",
+                "name": "Trà kim quất",
+                "price": 20000,
+                "sold": 113
+            },
+            {
+                "id": "tra-hoa-qua-041",
+                "name": "Trà kim quất Nha đam",
+                "price": 20000,
+                "sold": 130
+            },
+            {
+                "id": "tra-hoa-qua-042",
+                "name": "Trà li đào Hạt chia",
+                "price": 25000,
+                "sold": 147
+            }
+        ]
+    },
+    {
+        "category": "Đồ Ăn Vặt",
+        "items": [
+            {
+                "id": "do-an-vat-043",
+                "name": "Sandwich Pho mai Dăm bông",
+                "price": 18000,
+                "sold": 164
+            },
+            {
+                "id": "do-an-vat-044",
+                "name": "Hạt hướng dương nguyên vị",
+                "price": 10000,
+                "sold": 181
+            },
+            {
+                "id": "do-an-vat-045",
+                "name": "Hạt hướng dương vị Dứa",
+                "price": 10000,
+                "sold": 198
+            },
+            {
+                "id": "do-an-vat-046",
+                "name": "Bánh mì ngọt",
+                "price": 15000,
+                "sold": 215
+            }
+        ]
+    },
+    {
+        "category": "Kem Ly Merino",
+        "items": [
+            {
+                "id": "kem-ly-merino-047",
+                "name": "Kem ly Merino Sôcôla",
+                "price": 12000,
+                "sold": 232
+            },
+            {
+                "id": "kem-ly-merino-048",
+                "name": "Kem ly Merino Dứa",
+                "price": 12000,
+                "sold": 249
+            },
+            {
+                "id": "kem-ly-merino-049",
+                "name": "Kem ly Merino Vải",
+                "price": 12000,
+                "sold": 266
+            }
+        ]
+    },
+    {
+        "category": "Topping Trà",
+        "items": [
+            {
+                "id": "topping-tra-050",
+                "name": "Trân châu đường đen",
+                "price": 8000,
+                "sold": 283
+            },
+            {
+                "id": "topping-tra-051",
+                "name": "Trân châu trắng 3Q",
+                "price": 10000,
+                "sold": 0
+            },
+            {
+                "id": "topping-tra-052",
+                "name": "Hồng trà Kem cheese",
+                "price": 27000,
+                "sold": 17
+            },
+            {
+                "id": "topping-tra-053",
+                "name": "Hồng trà lau latte Trân châu trắng 3Q",
+                "price": 30000,
+                "sold": 34
             }
         ]
     }

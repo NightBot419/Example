@@ -1,0 +1,9 @@
+Tên: Bắt buộc, phải là chuỗi ký tự, và có độ dài tối đa 255 ký tự.
+Họ: Bắt buộc, phải là chuỗi ký tự, và có độ dài tối đa 255 ký tự.
+email: Bắt buộc, phải là chuỗi ký tự, phải có định dạng email hợp lệ, có độ dài tối đa 255 ký tự và phải là duy nhất (chưa có người dùng nào khác đăng ký bằng email này).
+password (Mật khẩu): Bắt buộc, và phải được xác nhận (tức là bạn phải nhập lại mật khẩu giống hệt vào trường "Xác nhận mật khẩu"). Ngoài ra, mật khẩu phải tuân thủ các quy tắc mặc định của Laravel, thường bao gồm:
+       * Tối thiểu 8 ký tự.
+       * Ít nhất một chữ cái in hoa.
+       * Ít nhất một chữ cái thường.
+       * Ít nhất một chữ số.
+       * Ít nhất một ký hiệu đặc biệt.
